@@ -69,7 +69,7 @@ function App() {
         console.log(e);
       }
     );
-  }, []);
+  }, [window]);
   //
   return (
     <>
