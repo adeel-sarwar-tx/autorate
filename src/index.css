@@ -1,0 +1,51 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ */
+
+@font-face {
+  font-family: "openSans";
+  src: local("openSans"),
+    url("./fonts/openSans/OpenSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "openSansLight";
+  src: local("openSansLight"),
+    url("./fonts/openSansLight/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "openSansMedium";
+  src: local("openSansMedium"),
+    url("./fonts/openSansMedium/OpenSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "openSansRegular";
+  src: local("openSansRegular"),
+    url("./fonts/openSansRegular/OpenSans-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: openSans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  font-family: openSansRegular, sans-serif !important;
+}

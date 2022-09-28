@@ -1,0 +1,25 @@
+.logos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.logos {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+    .logos {
+        width: 960px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .logos-container {
+        display: none !important;
+    }
+}

@@ -1,0 +1,269 @@
+.section-container {
+  display: flex;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-field {
+  width: 100%;
+  min-width: 30%;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  color: #555555 !important;
+  border: 1px solid #bfc3c8 !important;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset !important;
+  border-radius: 3px !important;
+  font-size: 19px;
+  text-align: center;
+  background-color: #fff;
+  height: 42px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.input-field:focus {
+  border-color: #09bc8a !important;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset, 0 0 8px rgb(9 188 138 / 60%) !important;
+}
+
+.form-section {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.options-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.option-button {
+  margin-bottom: 20px !important;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #000000;
+  font-weight: normal;
+  white-space: normal;
+  padding: 15px;
+  border: 2px #09bc8a solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: transparent;
+  width: 100%;
+  position: relative;
+  width: 23%;
+  min-width: 150px;
+  flex-direction: column;
+}
+
+img.vehicle-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.active-option-button::after {
+  content: "❯";
+  position: absolute;
+  right: 7px;
+  text-align: right;
+}
+
+.active-option-button {
+  background: rgba(9, 188, 138, 0.33);
+}
+/* phone number field +1 country code */
+.phone-number-label {
+  width: 90%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+label.phone-number-label::after {
+  content: "+1";
+  position: absolute;
+  left: 0;
+  font-size: 19px;
+  display: flex;
+  color: gray;
+  height: 100%;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .option-button:hover {
+    background: rgba(9, 188, 138, 0.33);
+  }
+}
+
+.info-text {
+  padding: 0;
+  font-family: "Roboto", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif !important;
+  font-size: 16px;
+  color: #666666;
+  font-weight: normal;
+  text-align: left;
+  font-style: normal;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-final-button {
+  width: 90% !important;
+  margin-bottom: 15px !important;
+  font-size: 22px !important;
+  font-weight: bold !important;
+  background: #09bc8a !important;
+  color: #fff !important;
+  border-width: 1px;
+  border-color: #09bc8a;
+  border-style: solid;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "Roboto", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif !important;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.form-final-button:hover {
+  background: #00184e !important;
+}
+
+.terms-and-conditions {
+  width: 90%;
+  font-size: 12px !important;
+  line-height: 19px !important;
+  color: #555 !important;
+}
+.terms-and-conditions a {
+  color: #09bc8a !important;
+}
+
+/*  width greater than 750px*/
+@media only screen and (min-width: 750px) {
+  .form-section {
+    width: 66.6666666667%;
+    max-width: 760px;
+  }
+}
+/* width less than 767px */
+@media only screen and (max-width: 767px) {
+  .option-button {
+    width: 46%;
+  }
+
+  /* address field fields width */
+  #city_hidden_field {
+    width: 90% !important;
+  }
+  #state_hidden_field {
+    width: 44% !important;
+  }
+  #zipcode_hidden_field {
+    width: 62% !important;
+  }
+}
+
+/* address */
+.address-options-container {
+  width: 90%;
+  box-shadow: inset 0 1px 1px rgb(0 0 0/8%), 0 0 8px rgb(9 188 138/60%) !important;
+  box-sizing: border-box;
+}
+
+.address-options-container div {
+  margin: 2px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  position: relative !important;
+}
+
+input.input-field.address-field {
+  text-align: left;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.address-field-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hidden-custom-button {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.loading-icon-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0000003b;
+}
+
+/* slide animation  section-container primary-label-container  */
+
+/* #root > div:nth-child(2) {
+  animation-duration: 0.3s;
+  animation-name: slidein;
+} */
+.primary-label-container {
+  animation-duration: 0.3s;
+  animation-name: slidein;
+}
+
+.section-container {
+  animation-duration: 0.3s;
+  animation-name: slidein;
+}
+.form-action-container {
+  animation-duration: 0.3s;
+  animation-name: slidein;
+}
+
+.select-field-container {
+  animation-duration: 0.3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

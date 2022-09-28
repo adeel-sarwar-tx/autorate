@@ -1,0 +1,47 @@
+.select-field-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.select-field-label {
+  margin-bottom: 15px;
+  color: #3f4b5b;
+  font-weight: 600;
+  text-align: left;
+  font-size: 18px;
+}
+
+.select-field {
+  color: #555555;
+  border-radius: 4px;
+}
+.select-field * {
+  color: #555555 !important;
+}
+.select-field:hover,
+.select-field:active,
+.select-field:focus {
+  border-color: #09bc8a !important;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset, 0 0 8px rgb(9 188 138 / 60%);
+}
+
+.MuiSelect-root:hover,
+.MuiSelect-root:active,
+.MuiSelect-root:focus {
+  border-color: #09bc8a;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset, 0 0 8px rgb(9 188 138 / 60%);
+}
+
+/* customise default style */
+.css-dqoqls-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline,
+.css-dqoqls-MuiInputBase-root-MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #09bc8a !important;
+  border-width: 1px !important;
+}
